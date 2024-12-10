@@ -924,19 +924,19 @@
 			<h4>The Prompt Template used to Extract the information required</h4>
             <div class="project-description">
                 <div class="description-text">
-                    <p><pre><code class="language-python">prompt_extract = PromptTemplate.from_template(
-						"""
-						### SCRAPED TEXT FROM WEBSITE:
-						{page_data}
-						### INSTRUCTION:
-						The scraped text is from the career's page of a website.
-						Your job is to extract the job postings and return them in JSON format containing the
-						following keys: `role`, `experience`, `skills` and `description`.
-						Only return the valid JSON.
-						### VALID JSON (NO PREAMBLE):
-						"""
-					)
-					</code></pre></p>
+<p><pre><code class="language-python">prompt_extract = PromptTemplate.from_template(
+	"""
+	### SCRAPED TEXT FROM WEBSITE:
+	{page_data}
+	### INSTRUCTION:
+	The scraped text is from the career's page of a website.
+	Your job is to extract the job postings and return them in JSON format containing the
+	following keys: `role`, `experience`, `skills` and `description`.
+	Only return the valid JSON.
+	### VALID JSON (NO PREAMBLE):
+	"""
+)
+</code></pre></p>
                 </div>
 
             </div>
@@ -946,23 +946,23 @@
 			<h4>The Prompt Template used to Generate the Email</h4>
             <div class="project-description">
                 <div class="description-text">
-                    <p><pre><code class="language-python">prompt_email = PromptTemplate.from_template(
-						"""
-						### JOB DESCRIPTION:
-						{job_description}
-				
-						### INSTRUCTION:
-						You are Vijay, a Dev Ops Engineer. You have more than 12  years of experience 
-						in this field. Currently you are working at Microsoft as a Senior Dev Ops Engineer.
-						Over at Microsoft you have delivered several projects in this field successfully.
-						Your job is to write a cold email to the client regarding the job mentioned above 
-						describing your capability, your experience in fulfilling their needs.
-						Also add the most relevant ones from the following links to showcase my portfolio: 
-						{link_list} Remember you are Vijay, a Dev Ops Engineer. Do not provide a preamble.
-						### EMAIL (NO PREAMBLE):
-						"""
-						)
-					</code></pre></p>
+<p><pre><code class="language-python">prompt_email = PromptTemplate.from_template(
+	"""
+	### JOB DESCRIPTION:
+	{job_description}
+
+	### INSTRUCTION:
+	You are Vijay, a Dev Ops Engineer. You have more than 12  years of experience 
+	in this field. Currently you are working at Microsoft as a Senior Dev Ops Engineer.
+	Over at Microsoft you have delivered several projects in this field successfully.
+	Your job is to write a cold email to the client regarding the job mentioned above 
+	describing your capability, your experience in fulfilling their needs.
+	Also add the most relevant ones from the following links to showcase my portfolio: 
+	{link_list} Remember you are Vijay, a Dev Ops Engineer. Do not provide a preamble.
+	### EMAIL (NO PREAMBLE):
+	"""
+	)
+</code></pre></p>
                 </div>
 
             </div>
@@ -972,36 +972,36 @@
 			<h4>The Resultant Email</h4>
             <div class="project-description">
                 <div class="description-text">
-                    <p><pre><code class="language-python">
-<b>Subject:</b> Application for DevOps Release Engineer Position
-
-Dear <b>Hiring Manager,</b>
+                   	<!-- <p><pre><code class="language-python"> -->
+<p><b>Subject:</b> Application for DevOps Release Engineer Position
+<BR>
+Dear <b>Hiring Manager,</b><BR>
 
 I am writing to express my interest in the DevOps Release Engineer position at your esteemed organization.
 With over 12 years of experience in the field of DevOps, I am confident that I possess the skills and expertise 
-required to excel in this role.
+required to excel in this role.<BR>
 As a Senior DevOps Engineer at Microsoft, I have had the opportunity to work on numerous projects, delivering 
 high-quality results and ensuring seamless deployment of applications. My expertise in Amazon Web Services, Git, Docker, 
-Grafana, Pipeline management, Python, and other relevant tools aligns perfectly with the requirements of this position.
+Grafana, Pipeline management, Python, and other relevant tools aligns perfectly with the requirements of this position.<BR>
 
 I am particularly drawn to this role because of the emphasis on managing and optimizing CI/CD pipelines, which is an area I 
 have extensive experience in. My skills in Copado, AWS DevOps, and other relevant tools will enable me to streamline release 
 processes and strengthen deployment strategies. In my current role, I have worked closely with development, QA, 
 and operations teams to ensure a reliable, scalable, and secure cloud environment. I am well-versed in automation, monitoring, 
-and continuous improvement, which are essential skills for this position.
+and continuous improvement, which are essential skills for this position.<BR>
 
-To showcase my portfolio, I would like to share the following links:
-* https://example.com/devops-portfolio
-* https://example.com/devops-portfolio
-* https://example.com/devops-portfolio
-These links demonstrate my expertise in DevOps and my ability to deliver high-quality results.
-I am excited about the opportunity to bring my skills and experience to your organization and contribute to the success of 
-your team. I  would welcome the opportunity to discuss this position further and explain in greater detail why I am the ideal 
-candidate for this role. Thank you for considering my application.
+To showcase my portfolio, I would like to share the following links:<BR>
+* https://example.com/devops-portfolio<BR>
+* https://example.com/devops-portfolio<BR>
+* https://example.com/devops-portfolio<BR>
+These links demonstrate my expertise in DevOps and my ability to deliver high-quality results.<BR>
+I am excited about the opportunity to bring my skills and experience to your organization and contribute to the success of <BR>
+your team. I  would welcome the opportunity to discuss this position further and explain in greater detail why I am the ideal <BR>
+candidate for this role. Thank you for considering my application.<BR>
 
-Best Regards,
-Vijay
-</code></pre></p>
+Best Regards,<BR>
+Vijay<BR>
+</p>
                 </div>
 
             </div>
